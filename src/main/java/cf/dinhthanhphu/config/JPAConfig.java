@@ -25,11 +25,11 @@ public class JPAConfig {
 	public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
 		LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
 		em.setDataSource(dataSource());
-		//persistence-data(tên chuẩn): file xml cầu liên kết(mapping) table trong db với java object
+		//persistence-data(tên chuẩn): file xml cầu nối liên kết(mapping) giữa table trong db với java object
 		em.setPersistenceUnitName("persistence-data");
 		JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
-		//additionalProperties: cách tạo table db
 		em.setJpaVendorAdapter(vendorAdapter);
+		//additionalProperties: cách tạo table db
 		em.setJpaProperties(additionalProperties());
 		return em;
 	}
@@ -61,7 +61,11 @@ public class JPAConfig {
 	//tạo table db
 	Properties additionalProperties() {
 		Properties properties = new Properties();
+		//tạo table xong tắt server sẽ remove table
 		properties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
+		//tạo table xong giữa nguyên
+		//properties.setProperty("hibernate.hbm2ddl.auto", "create");
+		//tạo table xong giữa nguyên
 		//properties.setProperty("hibernate.hbm2ddl.auto", "none");
 		return properties;
 	}

@@ -2,35 +2,23 @@ package cf.dinhthanhphu.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "new")
-public class NewEntity {
+public class NewEntity extends BaseEntity{
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
-	
 	@Column(name = "title")
 	private String title;
 	
 	@Column(name = "thumbnail")
 	private String thumbnail;
 	
-	@Column(name = "shortdescription", columnDefinition = "TEXT")
+	@Column(name = "shortdescription", columnDefinition = "NTEXT")
 	private String shortDescription;
 	
-	@Column(name = "content", columnDefinition = "TEXT")
+	@Column(name = "content", columnDefinition = "NTEXT")
 	private String content;
-
-	public Long getId() {
-		return id;
-	}
-
 
 	public String getTitle() {
 		return title;

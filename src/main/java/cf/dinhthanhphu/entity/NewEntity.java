@@ -14,12 +14,12 @@ public class NewEntity extends BaseEntity{
 	@Column(name = "thumbnail")
 	private String thumbnail;
 	
-	@Column(name = "shortdescription", columnDefinition = "NTEXT")
+	@Column(name = "shortdescription", columnDefinition = "TEXT")
 	private String shortDescription;
 	
-	@Column(name = "content", columnDefinition = "NTEXT")
+	@Column(name = "content", columnDefinition = "TEXT")
 	private String content;
-
+	
 	public String getTitle() {
 		return title;
 	}
@@ -50,5 +50,5 @@ public class NewEntity extends BaseEntity{
 
 	public void setContent(String content) {
 		this.content = content;
-	}
+	}	
 }

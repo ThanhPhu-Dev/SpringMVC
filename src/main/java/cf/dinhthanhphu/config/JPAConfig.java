@@ -65,7 +65,7 @@ public class JPAConfig {
 		properties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
 		//tạo table xong giữa nguyên
 		//properties.setProperty("hibernate.hbm2ddl.auto", "create");
-		//tạo table xong giữa nguyên
+		//không thay đổi gì đối với schema
 		//properties.setProperty("hibernate.hbm2ddl.auto", "none");
 		return properties;
 	}

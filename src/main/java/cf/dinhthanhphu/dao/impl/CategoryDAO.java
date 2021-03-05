@@ -2,13 +2,13 @@ package cf.dinhthanhphu.dao.impl;
 
 import java.util.List;
 
-import javax.annotation.ManagedBean;
+import org.springframework.stereotype.Repository;
 
 import cf.dinhthanhphu.dao.ICategoryDAO;
 import cf.dinhthanhphu.mapper.CategoryMapper;
 import cf.dinhthanhphu.model.CategoryModel;
 
-@ManagedBean
+@Repository
 public class CategoryDAO extends AbstractDAO<CategoryModel> implements ICategoryDAO {
  
 	

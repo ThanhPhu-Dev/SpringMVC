@@ -20,11 +20,15 @@
 
               http://www.springframework.org/schema/context/spring-context.xsd">
 
+	<!-- tất cả request sẽ trỏ đến file  cf.dinhthanhphu.controlller-->
    <context:component-scan
       base-package="cf.dinhthanhphu.controlller" />
 
+	<!-- hổ trợ @numberFormat, @dateTimeFormat, đọc xml, json,
+	Hỗ trợ cho việc chứng thực đầu vào @Controller với @Valid  -->
    <mvc:annotation-driven />
 
+	<!-- đặt thư mục góc của view ở /WEB-INF/views/ và có định dạng là jsp -->
    <bean
       class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 
@@ -33,5 +37,6 @@
       <property name="suffix" value=".jsp" />
 
    </bean>
+   <!-- những đường dẫn trong c:url bắt đầu từ /template/... thì đi vào localtion template (css,js)-->
    <mvc:resources location="/template/" mapping="/template/**"></mvc:resources>
 </beans>

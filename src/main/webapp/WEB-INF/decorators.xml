@@ -14,5 +14,7 @@
         <pattern>/*</pattern>
     </decorator>
     
-  
+  <decorator name="login" page="login.jsp"><!--  tất cả giao diện có bắt đầu bằng /dang-nhap sẽ chạy vào decorator login.jsp ở folder default-->
+        <pattern>/dang-nhap</pattern>
+    </decorator>
 </decorators>

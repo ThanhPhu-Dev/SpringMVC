@@ -31,8 +31,9 @@ public abstract class BaseEntity {
 	@LastModifiedDate
 	private Date modifiedDate;
 	
+	//bên jpaAuditingconfig sẽ trả về user và lưu vào đây annotation @CreatedBy hoặc @LastModifiedBy
 	@Column(name = "createdby")
-	@CreatedBy //bên jpaAuditingconfig sẽ trả về user và lưu vào đây annotation @CreatedBy hoặc @LastModifiedBy
+	@CreatedBy 
 	private String createdBy;
 	
 	@Column(name = "modifiedby")

@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
@@ -26,8 +27,10 @@ public class UserEntity extends BaseEntity {
 	@Column(name = "status")
 	private Integer status;
 
-	
-	@ManyToMany()
+	//EAGER là chạy lấy nhựng quan hệ bên trong, vd bên dưới là khi load user thì nó load lun role cũng lúc đó
+	// nếu dữ liệu lớn thì load sâu vào bên trong thì hiệu năng sẽ giảm.
+	// nên sử dụng lazy thì khi load user thì role chưa load
+	@ManyToMany(fetch = FetchType.LAZY)
 	@JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "userid"),//joincolums là tên cột nối với entity của bảng đang đứng
 								   inverseJoinColumns = @JoinColumn(name = "roleid"))
 	private List<RoleEntity> roles = new ArrayList<>();

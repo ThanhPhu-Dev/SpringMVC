@@ -2,13 +2,13 @@ package cf.dinhthanhphu.dao.impl;
 
 import java.util.List;
 
-
+import org.springframework.stereotype.Repository;
 
 import cf.dinhthanhphu.dao.IUserDAO;
 import cf.dinhthanhphu.mapper.UserMapper;
 import cf.dinhthanhphu.model.UserModel;
 
-
+@Repository
 public class UserDAO extends AbstractDAO<UserModel> implements IUserDAO {
 
 	@Override

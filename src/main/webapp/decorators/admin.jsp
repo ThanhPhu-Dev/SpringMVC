@@ -18,7 +18,7 @@
     <script src="<c:url value='/template/paging/jquery.twbsPagination.js' />"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
-    <script src="<c:url value='/ckeditor/ckeditor.js' />"></script>
+    <%-- <script src="<c:url value='/ckeditor/ckeditor.js' />"></script> --%>
 </head>
 <body class="no-skin">
 	<!-- header -->

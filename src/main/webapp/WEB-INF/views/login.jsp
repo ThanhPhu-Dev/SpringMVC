@@ -20,6 +20,13 @@
 				    	<strong>UserName or Password incorrect</strong> 
 				 	</div>
 				 </div>
+			</c:if> 
+			<c:if test="${param.accessDenied != null}">
+				<div class="fadeIn first">
+					<div class="alert alert-danger">
+				    	<strong>You Not Authorize</strong> 
+				 	</div>
+				 </div>
 			</c:if>
 			
 			<!-- Login Form -->

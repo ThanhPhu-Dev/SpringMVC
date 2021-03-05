@@ -6,6 +6,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.DefaultRedirectStrategy;
 import org.springframework.security.web.RedirectStrategy;
@@ -15,7 +16,7 @@ import org.springframework.stereotype.Component;
 import cf.dinhthanhphu.util.SecurityUtils;
 
 
-
+//sau khi login thành công sẽ tới đây, ở đâu làm nhiệm vụ phân quyền
 @Component
 public class CustomSuccessHandler extends SimpleUrlAuthenticationSuccessHandler {
 	
@@ -24,10 +25,12 @@ public class CustomSuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
 	@Override
 	public void handle(HttpServletRequest request, HttpServletResponse response, Authentication authentication)
 			throws IOException {
+		//gọi hàm determineTargetUrl : lấy url theo phần quyền
 		String targetUrl = determineTargetUrl(authentication);
 		if (response.isCommitted()) {
 			return;
 		}
+		
 		redirectStrategy.sendRedirect(request, response, targetUrl);
 	}
 
@@ -39,9 +42,11 @@ public class CustomSuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
 		this.redirectStrategy = redirectStrategy;
 	}
 	
+	//hàm check Authentication để chuyển trang
 	private String determineTargetUrl(Authentication authentication) {
 		String url = "";
 		List<String> roles = SecurityUtils.getAuthorities();
+
 		if (isAdmin(roles)) {
 			url = "/quan-tri/trang-chu";
 		} else if (isUser(roles)) {

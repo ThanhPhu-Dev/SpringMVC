@@ -36,9 +36,11 @@ public class CustomUserDetailsService implements UserDetailsService {
 		for (RoleEntity role: userEntity.getRoles()) {
 			authorities.add(new SimpleGrantedAuthority(role.getCode()));
 		}
-		MyUser myUser = new MyUser(userEntity.getUserName(), userEntity.getPassword(), 
+		
+		//vì User trong spring chỉ lưu dc username với password nên nếu muốn lưu thêm
+		// như fullname thì tạo 1 class extends User và thêm thuộc tính vào
+		MyUser myUser = new MyUser(userEntity.getFullName(),userEntity.getUserName(), userEntity.getPassword(), 
 							true, true, true, true, authorities);
-		myUser.setFullName(userEntity.getFullName());
 		return myUser;
 	}
 

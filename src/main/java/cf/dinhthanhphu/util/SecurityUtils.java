@@ -22,19 +22,16 @@ public class SecurityUtils {
 	
 	
 	// dùng để get thong tin MyUser
-	public User getPrincipal() {
-//		Object user = (SecurityContextHolder.getContext().getAuthentication().getPrincipal());
-//		MyUser myUser = (MyUser)user;
-//        return myUser;
-		 User user = facade.getAuthentication();
-		return user;
+	public static MyUser getPrincipal() {
+		Object user = (SecurityContextHolder.getContext().getAuthentication().getPrincipal());
+		MyUser myUser = (MyUser)user;
+        return myUser;
     }
 	
 	@SuppressWarnings("unchecked")
 	public static List<String> getAuthorities() {
 		List<String> results = new ArrayList<>();
-//		List<GrantedAuthority> authorities = (List<GrantedAuthority>)(SecurityContextHolder.getContext().getAuthentication().getAuthorities());
-		List<GrantedAuthority> authorities =(List<GrantedAuthority>) facade.getAuthentication().getAuthorities();
+		List<GrantedAuthority> authorities = (List<GrantedAuthority>)(SecurityContextHolder.getContext().getAuthentication().getAuthorities());
         for (GrantedAuthority authority : authorities) {
             results.add(authority.getAuthority());
         }

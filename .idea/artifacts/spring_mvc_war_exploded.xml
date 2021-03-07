@@ -1,13 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="spring-mvc:war exploded">
-    <output-path>$PROJECT_DIR$/target/spring-mvc-1.0</output-path>
-    <properties id="maven-jee-properties">
-      <options>
-        <exploded>true</exploded>
-        <module>spring-mvc</module>
-        <packaging>war</packaging>
-      </options>
-    </properties>
+    <output-path>$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -28,14 +21,11 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-context-support:4.3.13.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aspects:4.3.13.RELEASE" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.8.9" />
-          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:3.2.8.RELEASE" />
-          <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
-          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:3.2.8.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:3.2.8.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-acl:3.2.8.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-taglibs:3.2.8.RELEASE" />
-          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
-          <element id="library" level="project" name="Maven: javax.servlet.jsp:javax.servlet.jsp-api:2.3.1" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:5.4.2" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:5.4.2" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:5.4.2" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-acl:5.4.2" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-taglibs:5.4.2" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
           <element id="library" level="project" name="Maven: opensymphony:sitemesh:2.4.2" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.23" />
@@ -59,9 +49,6 @@
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
           <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.25" />
         </element>
-      </element>
-      <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/spring-mvc-1.0/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="spring-mvc/web/Web" />
     </root>

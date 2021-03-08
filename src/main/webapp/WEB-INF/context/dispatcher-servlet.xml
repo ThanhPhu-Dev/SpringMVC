@@ -20,9 +20,9 @@
 
               http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<!-- tất cả request sẽ trỏ đến file  cf.dinhthanhphu.controlller-->
+	<!-- tất cả request sẽ trỏ đến file  cf.dinhthanhphu.controlller, hay api-->
    <context:component-scan
-      base-package="cf.dinhthanhphu.controlller" />
+      base-package="cf.dinhthanhphu.controlller, cf.dinhthanhphu.api" />
 
 	<!-- hổ trợ @numberFormat, @dateTimeFormat, đọc xml, json,
 	Hỗ trợ cho việc chứng thực đầu vào @Controller với @Valid  -->

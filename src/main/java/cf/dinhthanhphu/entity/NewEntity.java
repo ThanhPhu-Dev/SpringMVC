@@ -2,6 +2,9 @@ package cf.dinhthanhphu.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -19,6 +22,13 @@ public class NewEntity extends BaseEntity{
 	
 	@Column(name = "content", columnDefinition = "TEXT")
 	private String content;
+	
+	//quan hệ này phải đi kèm với @onetomany
+	//category_id là column bên bảng new dùng để nối đến khóa chính trong category.
+	//tên biến category phải giống bên mapped bên categoryentity để biết new 1 - n với entity nào
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "category_id")
+    private CategoryEntity category;
 	
 	public String getTitle() {
 		return title;
@@ -50,5 +60,14 @@ public class NewEntity extends BaseEntity{
 
 	public void setContent(String content) {
 		this.content = content;
+	}
+
+	public CategoryEntity getCategory() {
+		return category;
+	}
+
+	public void setCategory(CategoryEntity category) {
+		this.category = category;
 	}	
+	
 }

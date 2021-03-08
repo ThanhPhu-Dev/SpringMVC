@@ -17,7 +17,9 @@ public class RoleEntity extends BaseEntity {
 
 	@Column(name = "code")
 	private String code;
-
+	
+	//MapopedBy trỏ tới tên biến roles ở trong usersEntity.
+	//phải giống tên đến biến n-n với entiy nào
 	@ManyToMany(mappedBy = "roles")
 	private List<UserEntity> users = new ArrayList<>();
 

@@ -10,10 +10,10 @@
 
 	<http auto-config="false" use-expressions="true"
 		disable-url-rewriting="true">
-
 		<!-- intercepter hasAnyRole là những role được phép truy cập vào pattern, 
 			các role cách nhau 1 dấu phẩy, khác với access-denied-handler là này check 
 			trước khi vào trang (chưa đăng nhập mà cố tình truy cập admin) -->
+			
 	<!-- 	<intercept-url pattern="/quan-tri/trang-chu" access="hasAnyRole('ADMIN')" /> -->
 
 

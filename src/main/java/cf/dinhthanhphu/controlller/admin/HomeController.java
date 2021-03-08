@@ -1,27 +1,19 @@
 package cf.dinhthanhphu.controlller.admin;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import cf.dinhthanhphu.security.AuthenticationFacade;
 import cf.dinhthanhphu.util.SecurityUtils;
 
 @Controller(value = "homeControllerOfAdmin")
 public class HomeController {
-	@Autowired
-    private AuthenticationFacade authenticationFacade;
-
+	
 	@RequestMapping(value = "/quan-tri/trang-chu", method = RequestMethod.GET)
 	public ModelAndView homePage() {
 
-        
 		ModelAndView mav = new ModelAndView("admin/home");
-		
 		return mav;
 	}
 }

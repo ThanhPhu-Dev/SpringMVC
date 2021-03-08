@@ -11,7 +11,7 @@
                     <i class="fa fa-leaf"></i>
                     Trang quản trị
                 </small>
-            </a>git checkout <branch>
+            </a><branch>
         </div>
         <div class="navbar-buttons navbar-header pull-right collapse navbar-collapse" role="navigation">
             <ul class="nav ace-nav">

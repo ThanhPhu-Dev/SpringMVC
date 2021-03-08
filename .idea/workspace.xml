@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="spring-mvc:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="821a5fc4-2f01-4e80-8570-e5115e98b870" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/spring-mvc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/spring_mvc_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/spring_mvc_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/config/JPAAuditingConfig$AuditorAwareImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/config/JPAAuditingConfig$AuditorAwareImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/config/JPAAuditingConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/config/JPAAuditingConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/config/JPAConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/config/JPAConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/constant/SystemConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/constant/SystemConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/controlller/admin/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/controlller/admin/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/controlller/admin/NewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/controlller/admin/NewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/controlller/web/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/controlller/web/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/dao/GenericDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/dao/GenericDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/dao/ICategoryDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/dao/ICategoryDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/dao/INewDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/dao/INewDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/dao/IUserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/dao/IUserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/dao/impl/AbstractDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/dao/impl/AbstractDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/dao/impl/CategoryDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/dao/impl/CategoryDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/dao/impl/NewDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/dao/impl/NewDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/dao/impl/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/dao/impl/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/dto/AbstractDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/dto/AbstractDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/dto/MyUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/dto/MyUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/dto/NewDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/dto/NewDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/entity/BaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/entity/BaseEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/entity/CategoryEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/entity/CategoryEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/entity/NewEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/entity/NewEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/entity/RoleEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/entity/RoleEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/entity/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/entity/UserEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/mapper/CategoryMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/mapper/CategoryMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/mapper/NewMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/mapper/NewMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/mapper/RowMappper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/mapper/RowMappper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/model/AbstractModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/model/AbstractModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/model/CategoryModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/model/CategoryModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/model/NewsModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/model/NewsModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/model/RoleModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/model/RoleModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/model/UserModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/model/UserModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/model/commentModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/model/commentModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/repository/NewRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/repository/NewRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/security/CustomSuccessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/security/CustomSuccessHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/service/INewService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/service/INewService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/service/impl/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/service/impl/CustomUserDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/service/impl/NewService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/service/impl/NewService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/util/SecurityUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cf/dinhthanhphu/util/SecurityUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/context/security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/context/security.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/views/web/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/views/web/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/common/admin/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/common/admin/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/common/web/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/common/web/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/css/small-business.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/css/small-business.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/bootstrap/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/jquery/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/jquery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/jquery/jquery.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/jquery/jquery.slim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/jquery/jquery.slim.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/template/web/vendor/jquery/jquery.slim.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cf/dinhthanhphu/controlller/admin/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cf/dinhthanhphu/controlller/admin/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/common/web/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/common/web/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/decorators/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/decorators/admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/decorators/web.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/decorators/web.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cf/dinhthanhphu/controlller/admin/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cf/dinhthanhphu/controlller/admin/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/cf.dinhthanhphu/spring-mvc/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/cf.dinhthanhphu/spring-mvc/pom.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1pSWE8bUbPzBDZ2AltUhHGfTOk4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.5597701" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 8.5.63" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.63" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="spring-mvc:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/spring_mvc" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="b136467b-42ee-4a22-b230-6d516ab1938b" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="64741" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="spring-mvc:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="821a5fc4-2f01-4e80-8570-e5115e98b870" name="Default Changelist" comment="" />
+      <created>1615176858517</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615176858517</updated>
+      <workItem from="1615176860614" duration="1118000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cf/dinhthanhphu/util/SecurityUtils.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

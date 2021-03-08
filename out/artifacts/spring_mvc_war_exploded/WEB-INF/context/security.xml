@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans
+	xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+            http://www.springframework.org/schema/security
+            http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+
+	<http auto-config="false" use-expressions="true"
+		disable-url-rewriting="true">
+
+		<!-- intercepter hasAnyRole là những role được phép truy cập vào pattern, 
+			các role cách nhau 1 dấu phẩy, khác với access-denied-handler là này check 
+			trước khi vào trang (chưa đăng nhập mà cố tình truy cập admin) -->
+	<!-- 	<intercept-url pattern="/quan-tri/trang-chu" access="hasAnyRole('ADMIN')" /> -->
+
+
+
+		<!-- j_spring_security_check là url nhận thông tin submit từ frontend, 
+			url đã có chưa action giống bên jsp authentication-failure-url là khi tài 
+			khoản đăng nhập sai thì chổ này sẽ kích hoạt, /dang-nhap?incorrectAccount 
+			url chạy khi đăng nhập sai,incorrectAccount là parameter authentication-success-handler-ref 
+			là khi tài khoản đăng nhập thành công thì sẽ kích hoạt, access-denied-handler 
+			xữ lý khi người dùng đăng nhập quyền user, không có quyền admin nhưng cố 
+			truy câp vào url admin thì nó chạy vào url error-page -->
+
+		<access-denied-handler error-page="/accessDenied" />
+        <form-login  login-page="/dang-nhap"
+                     username-parameter="j_username"
+                     password-parameter="j_password"
+                     login-processing-url="/j_spring_security_check"
+                     authentication-success-handler-ref="customSuccessHandler"
+                     authentication-failure-url="/dang-nhap?incorrectAccount"/>
+        <session-management invalid-session-url="/dang-nhap?"/>
+        <logout delete-cookies="JSESSIONID"/>
+    </http>
+
+	<!-- check tài khoản (authentication) -->
+	 <authentication-manager >
+        <authentication-provider user-service-ref="customUserDetailsService">
+        		<password-encoder ref="bcryptEncoder"/>
+        </authentication-provider>
+    </authentication-manager>
+
+	<!-- dùng để mã hóa password (MD5) chạy ngầm -->
+	<beans:bean id="bcryptEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder" />
+
+	<!-- khi đăng nhập thì authentication-manager chạy nó và user-service-ref 
+		sẽ mapping đến id giống và chạy file class CustomUserDetailsService để check 
+		tài khoản -->
+	<beans:bean id="customUserDetailsService"
+		class="cf.dinhthanhphu.service.impl.CustomUserDetailsService" />
+
+	<!-- nếu thành công thì customSuccessHandler sẽ mapping tới id dưới và chạy 
+		file dưới làm chức năng authorization -->
+	<beans:bean id="customSuccessHandler"
+		class="cf.dinhthanhphu.security.CustomSuccessHandler" />
+
+</beans:beans>

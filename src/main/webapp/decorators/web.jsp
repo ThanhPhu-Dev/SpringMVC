@@ -14,12 +14,12 @@
 </head>
 <body>
 	<!-- Navigation -->
-	<%@ include file="/common/web/header.jsp" %>
+	<%--<%@ include file="/common/web/header.jsp" %>--%>
 	
 	<dec:body/>
 	
 	<!-- Footer -->
-	<%@ include file="/common/web/footer.jsp" %>
+	<%--<%@ include file="/common/web/footer.jsp" %>--%>
   
 
   

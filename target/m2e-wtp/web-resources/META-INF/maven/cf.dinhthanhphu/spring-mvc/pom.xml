@@ -19,8 +19,8 @@
 		<!-- sitmesh(decorator) có chức năng điều hướng (là 1 thư viện filter kiểmtra 
 			tất cả url để chuyển trang) đến đúng trang người dùng muốn bằng tiền tố url -->
 		<sitemesh.version>2.4.2</sitemesh.version>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.15</maven.compiler.source>
+		<maven.compiler.target>1.15</maven.compiler.target>
 	</properties>
 
 	<dependencies>
@@ -177,8 +177,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.6.1</version>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>1.15</source>
+					<target>1.15</target>
 				</configuration>
 			</plugin>
 		</plugins>

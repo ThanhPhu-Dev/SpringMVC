@@ -2,8 +2,8 @@ package cf.dinhthanhphu.service;
 
 import java.util.List;
 
-import cf.dinhthanhphu.model.NewsModel;
+import cf.dinhthanhphu.dto.NewDTO;
 
 public interface INewService {
-	List<NewsModel> findAll();
+	List<NewDTO> findAll();
 }

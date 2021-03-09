@@ -28,7 +28,7 @@ public class UserEntity extends BaseEntity {
 	private Integer status;
 
 	//EAGER là chạy lấy nhựng quan hệ bên trong, vd bên dưới là khi load user thì nó load lun role cũng lúc đó
-	// nếu dữ liệu lớn thì load sâu vào bên trong thì hiệu năng sẽ giảm.
+	// nếu dữ liệu lớn thì load sâu vào bên trong thxì hiệu năng sẽ giảm.
 	// nên sử dụng lazy thì khi load user thì role chưa load
 	//theo quy tắc n-n sẽ tạo ra bảng mới lầy khóa chính 2 bảng về làm khóa chính
 	//ở đầy sẽ tạo ra bảng có tên là user_role, @JoinColumn là tên 2 cột trong bảng 

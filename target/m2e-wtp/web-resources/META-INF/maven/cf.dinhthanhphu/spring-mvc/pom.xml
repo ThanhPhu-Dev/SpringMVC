@@ -19,12 +19,13 @@
 		<!-- sitmesh(decorator) có chức năng điều hướng (là 1 thư viện filter kiểmtra 
 			tất cả url để chuyển trang) đến đúng trang người dùng muốn bằng tiền tố url -->
 		<sitemesh.version>2.4.2</sitemesh.version>
+		<modelmapper.version>2.3.0</modelmapper.version>
 		<maven.compiler.source>1.15</maven.compiler.source>
 		<maven.compiler.target>1.15</maven.compiler.target>
 	</properties>
 
 	<dependencies>
-		
+
 		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -86,7 +87,7 @@
 			<artifactId>spring-security-acl</artifactId>
 			<version>${springsecurity.version}</version>
 		</dependency>
-		
+
 		<!-- spring secuirty taglibs -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
@@ -100,35 +101,35 @@
 			<artifactId>javax.servlet-api</artifactId>
 			<version>${servlet.api.version}</version>
 		</dependency>
-		
+
 		<!-- jsp api -->
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>javax.servlet.jsp-api</artifactId>
 			<version>${jsp.api.version}</version>
 		</dependency>
-		
+
 		<!-- jstl -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>${jstl.version}</version>
 		</dependency>
-		
+
 		<!-- sitemesh -->
 		<dependency>
 			<groupId>opensymphony</groupId>
 			<artifactId>sitemesh</artifactId>
 			<version>${sitemesh.version}</version>
 		</dependency>
-		
+
 		<!-- Mysql -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>${mysql.version}</version>
 		</dependency>
-		
+
 		<!-- Hibernate -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -187,14 +188,23 @@
 		</dependency>
 		<!--end json -->
 
-		
+		<dependency>
+			<groupId>org.modelmapper</groupId>
+			<artifactId>modelmapper</artifactId>
+			<version>${modelmapper.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.9.3</version>
+		</dependency>
 
 
 
 
-		
 
-		
+
 	</dependencies>
 
 	<build>

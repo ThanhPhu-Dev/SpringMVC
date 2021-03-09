@@ -62,11 +62,11 @@ public class JPAConfig {
 	Properties additionalProperties() {
 		Properties properties = new Properties();
 		//tạo table xong tắt server sẽ remove table
-		properties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
+		//properties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
 		//tạo table xong giữa nguyên
 		//properties.setProperty("hibernate.hbm2ddl.auto", "create");
 		//tạo table xong giữa nguyên
-		//properties.setProperty("hibernate.hbm2ddl.auto", "none");
+		properties.setProperty("hibernate.hbm2ddl.auto", "none");
 		properties.setProperty("hibernate.enable_lazy_load_no_trans", "true");
 		return properties;
 	}

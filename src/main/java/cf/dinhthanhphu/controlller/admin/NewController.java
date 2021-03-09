@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import cf.dinhthanhphu.model.NewsModel;
+import cf.dinhthanhphu.dto.NewDTO;
 import cf.dinhthanhphu.service.INewService;
 
 @Controller(value = "NewControllerOfAdmin")
@@ -16,7 +16,7 @@ public class NewController {
 	private INewService newSerivce;
 	
 	@RequestMapping(value = "/quan-tri/bai-viet/danh-sach", method = RequestMethod.GET)
-	   public ModelAndView showlist(@ModelAttribute("model") NewsModel model) {
+	   public ModelAndView showlist(@ModelAttribute("model") NewDTO model) {
 	      ModelAndView mav = new ModelAndView("admin/new/list");
 	      model.setListResult(newSerivce.findAll());
 	      mav.addObject("model", model);

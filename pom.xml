@@ -20,8 +20,8 @@
 			tất cả url để chuyển trang) đến đúng trang người dùng muốn bằng tiền tố url -->
 		<sitemesh.version>2.4.2</sitemesh.version>
 		<modelmapper.version>2.3.0</modelmapper.version>
-		<maven.compiler.source>1.15</maven.compiler.source>
-		<maven.compiler.target>1.15</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
 	<dependencies>
@@ -188,7 +188,7 @@
 		</dependency>
 		<!--end json -->
 
-		
+
 
 
 
@@ -203,8 +203,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.6.1</version>
 				<configuration>
-					<source>1.15</source>
-					<target>1.15</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 		</plugins>

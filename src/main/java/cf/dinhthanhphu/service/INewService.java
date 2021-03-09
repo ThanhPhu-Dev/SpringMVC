@@ -2,8 +2,11 @@ package cf.dinhthanhphu.service;
 
 import java.util.List;
 
+import org.springframework.data.domain.Pageable;
+
 import cf.dinhthanhphu.dto.NewDTO;
 
 public interface INewService {
-	List<NewDTO> findAll();
+	List<NewDTO> findAll(Pageable pageable);
+	int getTotalItem();
 }

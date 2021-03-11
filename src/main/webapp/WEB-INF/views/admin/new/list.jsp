@@ -2,6 +2,8 @@
 <%@include file="/common/taglib.jsp"%>
 <c:url var="APIurl" value="/api-admin-new"/>
 <c:url var ="NewURL" value="/admin-new"/>
+<c:url var="createNewURL" value="/quan-tri/bai-viet/chinh-sua"/>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -37,7 +39,7 @@
 										<div class="dt-buttons btn-overlap btn-group">
 											<a flag="info" 
 												class="dt-button buttons-colvis btn btn-white btn-primary btn-bold" data-toggle="tooltip" 
-												title='Thêm bài viết' href='#'> 
+												title='Thêm bài viết' href='${createNewURL}'> 
 													<span>
 														<i class="fa fa-plus-circle bigger-110 purple"></i>
 													</span>
@@ -70,6 +72,9 @@
 											<tbody>
 											<c:forEach var = "item" items= "${model.listResult}">
 												<tr>
+												<c:url var="updateNewURL" value="/quan-tri/bai-viet/chinh-sua">
+													<c:param name="id" value="${item.id}"></c:param>
+												</c:url>
 													<td><input type="checkbox" id="checkbox_${item.id}" value="${item.id}"></td>
 													<td>${item.title}</td>
 													<td>${item.thumbnail}</td>
@@ -78,7 +83,7 @@
 													<td>${item.categoryId}</td>
 													<td>
 														<a class="btn btn-sm btn-primary btn-edit" data-toggle="tooltip"
-															title="Cập nhật bài viết" href='#'><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+															title="Cập nhật bài viết" href='${updateNewURL}'><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
 														</a>
 													</td>
 												</tr>

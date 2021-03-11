@@ -23,56 +23,75 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<!-- PAGE CONTENT BEGINS -->
-						<form class="form-horizontal" role="form" id='formSubmit'>
+						<form:form class="form-horizontal" role="form" id='formSubmit' modelAttribute="model">
 							<div class="form-group">
 								<label for="categoryCode" class="col-sm-3 control-label no-padding-right">Thể Loại:</label>
 								<div class="col-sm-9">
-									<select class="form-control" id="categoryCode" name="categoryCode">
-										<option value="">1</option>
-										<option value="">2</option>
-										<option value="">3</option>
-										<option value="">4</option>
-									</select>
+									<%-- <select class="form-control" id="categoryCode" name="categoryCode">
+										<option value="">chọn thể loại</option>
+										<c:forEach var="item" items="${catogories}">
+											<option value="${item.code}">${item.name}</option>
+										</c:forEach>
+									</select> --%>
+									
+									<!-- path tương đương với name và value, maping tới modelAttribute 
+									vd path="categoryCode" thì sau biên dịch là model.categoryCode-->
+									
+									<form:select path="categoryCode" id="categoryCode">
+										<form:option value="" label="chọn thể loại"  />
+										<form:options items="${catogories}" itemValue="code" itemLabel="name" />
+									</form:select>
 								</div> 
 							</div>
 							<div class="form-group">
 								<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Tên Bài Viết </label>
 								<div class="col-sm-9">
-									<input type="text" placeholder="Tên Bài Viết" class="col-xs-10 col-sm-5" id="title" name="title" />
+									<%-- <input type="text" placeholder="Tên Bài Viết" class="col-xs-10 col-sm-5" id="title" name="title" value="${model.title}"/> --%>
+									
+									<form:input path="title" cssClass="col-xs-10 col-sm-5" id="title" placeholder="Tên Bài Viết"/>
 								</div>
 							</div>
 							<div class="form-group">
 								<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Ảnh Đại diện </label>
 								<div class="col-sm-9">
-									<input type="file" placeholder="Tên Bài Viết" class="col-xs-10 col-sm-5" id="thumbnail" name="thumbnail" />
+									<!-- <input type="file" class="col-xs-10 col-sm-5" id="thumbnail" name="thumbnail" /> -->
+									<form:input path="thumbnail" cssClass="col-xs-10 col-sm-5" id="thumbnail"  />
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="shortDescription" class="col-sm-3 control-label no-padding-right">Mô Tả ngắn:</label>
 								<div class="col-sm-9">
-									<textarea class="form-control" rows="5" cols="10" id="shortDescription" name="shortDescription"></textarea>
+									<%-- <textarea class="form-control" rows="5" cols="10" id="shortDescription" name="shortDescription" value="${model.shortDescription}"></textarea> --%>
+									<form:textarea path="shortDescription" cssClass="form-control" rows="5" cols="10" id="shortDescription"/>
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="content" class="col-sm-3 control-label no-padding-right">Nội Dung:</label>
 								<div class="col-sm-9">
-									<textarea class="form-control" rows="5" cols="10" id="content" name="content"></textarea>
+									<%-- <textarea class="form-control" rows="5" cols="10" id="content" name="content" value="${model.content}"></textarea> --%>
+									<form:textarea path="content" cssClass="form-control"  rows="5" cols="10" id="content"/>
 								</div>
 							</div>
 							
 							<div class="clearfix form-actions">
 								<div class="col-md-offset-3 col-md-9">
+								<c:if test="${not empty model.id }">
 									<button class="btn btn-info" type="button">
-										<i class="ace-icon fa fa-check bigger-110" id="btnAddOrUpdateNew"></i> Thêm Bài Viết
+										<i class="ace-icon fa fa-check bigger-110" id="btnAddOrUpdateNew"></i> Cập Nhật Bài Viết
 									</button>
-
+								</c:if>
+								<c:if test="${not empty model.id }">
+									<button class="btn btn-info" type="button">
+										<i class="ace-icon fa fa-check bigger-110" id="btnAddOrUpdateNew"></i> Thêm bài Viết
+									</button>
+								</c:if>
 									&nbsp; &nbsp; &nbsp;
 									<button class="btn" type="reset">
 										<i class="ace-icon fa fa-undo bigger-110"></i> Hủy
 									</button>
 								</div>
 							</div>
-						</form>
+						</form:form>
 					</div>
 				</div>
 			</div>

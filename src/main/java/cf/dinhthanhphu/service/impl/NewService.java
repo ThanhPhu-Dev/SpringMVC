@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import cf.dinhthanhphu.convert.NewConverter;
 import cf.dinhthanhphu.dto.NewDTO;
@@ -38,6 +39,21 @@ public class NewService implements INewService {
 	public NewDTO findById(long id) {
 		NewEntity entity = newReposotory.findOne(id);
 		return convert.toDto(entity);
+	}
+
+	@Override
+	@Transactional
+	public NewDTO saveOrUpdate(NewDTO dto) {
+		NewEntity entity = new NewEntity();
+		if(dto.getId() != null)
+		{
+			//phải lấy thằng cũ torng db rồi update chính nó mới được
+			NewEntity oldnew = newReposotory.findOne(dto.getId());
+			entity = convert.toEntity(oldnew, dto);
+		}else {
+			convert.toEntity(entity, dto);
+		}
+		return convert.toDto(newReposotory.save(entity));
 	}
 
 	

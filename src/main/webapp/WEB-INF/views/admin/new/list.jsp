@@ -44,7 +44,7 @@
 														<i class="fa fa-plus-circle bigger-110 purple"></i>
 													</span>
 											</a>
-											<button id="btnDelete" type="button"
+											<button id="btnDelete" type="button" onclick="warningBeforeDelete()"
 												class="dt-button buttons-html5 btn btn-white btn-primary btn-bold"
 												data-toggle="tooltip" title='Xóa bài viết'>
 												<span> <i class="fa fa-trash-o bigger-110 pink"></i>
@@ -123,6 +123,23 @@
             }
         });
     });
+	
+	function warningBeforeDelete(){
+		swal({
+			  title: "Xác Nhận Xóa",
+			  text: "Bạn có chắc muốn xóa",
+			  type: "warning",
+			  showCancelButton: true,
+			  confirmButtonClass: "btn-success",
+			  cancelButtonClass: "btn-danger",
+			  confirmButtonText: "Xác Nhận",
+			  cancelButtonText: "Hủy Bỏ",
+			}).then(function(isConfirm) {
+			  if (isConfirm) {
+			    console.log("ok sweetalter");
+			  }
+			});
+	}
 	</script>
 </body>
 

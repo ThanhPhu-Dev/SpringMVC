@@ -11,4 +11,5 @@ public interface INewService {
 	int getTotalItem();
 	NewDTO findById(long id);
 	NewDTO saveOrUpdate(NewDTO dto);
+	void delete(long[] id);
 }

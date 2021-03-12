@@ -21,6 +21,11 @@
     
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
     <%-- <script src="<c:url value='/ckeditor/ckeditor.js' />"></script> --%>
+    
+    <!-- sweetalter -->
+    <script src="<c:url value='/template/admin/sweetAlter/sweetalert2.min.js' />"></script>
+    <link rel="stylesheet" href="<c:url value='/template/admin/sweetAlter/sweetalert2.min.css' />" />
+    
 </head>
 <body class="no-skin">
 	<!-- header -->

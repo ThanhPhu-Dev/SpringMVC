@@ -56,6 +56,14 @@ public class NewService implements INewService {
 		return convert.toDto(newReposotory.save(entity));
 	}
 
+	@Override
+	@Transactional
+	public void delete(long[] ids) {
+		for(long id : ids) {
+			newReposotory.delete(id);
+		}
+	}
+
 	
 	
 }

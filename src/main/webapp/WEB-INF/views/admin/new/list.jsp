@@ -1,7 +1,7 @@
 
 <%@include file="/common/taglib.jsp"%>
-<c:url var="APIurl" value="/api-admin-new"/>
-<c:url var ="NewURL" value="/admin-new"/>
+<c:url var="APIurl" value="/api/new"/>
+<c:url var ="NewURL" value="/quan-tri/bai-viet/danh-sach"/>
 <c:url var="createNewURL" value="/quan-tri/bai-viet/chinh-sua"/>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -136,9 +136,28 @@
 			  cancelButtonText: "Hủy Bỏ",
 			}).then(function(isConfirm) {
 			  if (isConfirm) {
-			    console.log("ok sweetalter");
+					var ids = $('tbody input[type=checkbox]:checked').map(function(){
+						return $(this).val();
+					}).get();
+					
+					deleteNews(ids);
 			  }
 			});
+	}
+	
+	function deleteNews(data){
+		$.ajax({
+			url: '${APIurl}',
+			type: 'DELETE',
+			contentType: 'application/json',
+			data: JSON.stringify(data), 
+			success: function(result){
+				window.location.href = "${NewURL}?page=1&limit=2&message=delete_success";
+			},
+			error: function(error){
+				window.location.href = "${NewURL}?page=1&limit=2&message=error_system";
+			}
+		});
 	}
 	</script>
 </body>

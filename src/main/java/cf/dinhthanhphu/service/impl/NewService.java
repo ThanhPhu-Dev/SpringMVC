@@ -47,7 +47,7 @@ public class NewService implements INewService {
 		NewEntity entity = new NewEntity();
 		if(dto.getId() != null)
 		{
-			//phải lấy thằng cũ torng db rồi update chính nó mới được
+			//phải lấy thằng cũ trong db rồi update chính nó mới được
 			NewEntity oldnew = newReposotory.findOne(dto.getId());
 			entity = convert.toEntity(oldnew, dto);
 		}else {
